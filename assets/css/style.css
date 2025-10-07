@@ -1,0 +1,13 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf2;
+}
+
+.navbar {
+  background-color: #ff8c00 !important;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+}
