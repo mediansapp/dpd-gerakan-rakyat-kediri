@@ -1,16 +1,133 @@
+ 
+/* =========================================================
+   STYLE UTAMA DPD GERAKAN RAKYAT KOTA KEDIRI
+   ========================================================= */
+
+/* Reset dan warna dasar */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fffaf2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffaf3;
+  color: #333;
+  scroll-behavior: smooth;
 }
 
+/* Navbar */
 .navbar {
-  background-color: #ff8c00 !important;
+  transition: all 0.3s ease-in-out;
+}
+.navbar.shadow {
+  background-color: #ff7a00 !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Brand dan link navbar */
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+.navbar-brand:hover img {
+  transform: rotate(-5deg) scale(1.1);
+}
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #000 !important;
+}
+
+/* Header hero */
+header {
+  background: linear-gradient(180deg, #ff9900, #ff7a00);
+  color: white;
+  padding: 100px 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  animation: fadeDown 1.2s ease-out;
+}
+
+/* Kartu berita / galeri */
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Tombol */
+.btn-warning {
+  background-color: #ff7a00 !important;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn-warning:hover {
+  background-color: #e56a00 !important;
+  transform: scale(1.05);
+}
+
+/* Footer */
 footer {
   background-color: #222;
-  color: white;
+  color: #ddd;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
 }
+
+/* Animasi fade */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Efek animasi umum */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Galeri dan struktur */
+.rounded-circle {
+  border: 3px solid #ff7a00;
+  padding: 3px;
+  transition: transform 0.3s ease;
+}
+.rounded-circle:hover {
+  transform: scale(1.08);
+}
+
+/* Form */
+form input, form textarea {
+  border: 1px solid #ffc47c;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+form input:focus, form textarea:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 5px rgba(255,122,0,0.4);
+  outline: none;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+}
+
 /* =========================================================
    COUNT-UP SECTION STYLE
    ========================================================= */
