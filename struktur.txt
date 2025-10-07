@@ -1,0 +1,11 @@
+dpd-gerakan-rakyat-kediri/
+├── admin/            ← Panel admin (login, CRUD)
+├── assets/css/       ← Style oranye khas DPD Gerakan Rakyat
+├── config/database.php
+├── uploads/          ← Folder upload gambar
+├── index.php
+├── berita.php
+├── struktur.php
+├── galeri.php
+├── daftar.php
+└── dpd_kediri.sql    ← Database siap import
