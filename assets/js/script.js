@@ -101,3 +101,41 @@ function showAlert(message, type = "success") {
   background-color: #ff7a00;
 }
 
+// ===========================================================
+// GALERI SLIDER OTOMATIS DPD GERAKAN RAKYAT KOTA KEDIRI
+// ===========================================================
+
+let currentSlide = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll(".slide");
+  if (slides.length === 0) return;
+
+  if (index >= slides.length) currentSlide = 0;
+  if (index < 0) currentSlide = slides.length - 1;
+
+  slides.forEach((slide, i) => {
+    slide.style.display = i === currentSlide ? "block" : "none";
+    slide.classList.toggle("active", i === currentSlide);
+  });
+}
+
+function nextSlide() {
+  currentSlide++;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide--;
+  showSlide(currentSlide);
+}
+
+// Auto-slide setiap 5 detik
+setInterval(() => {
+  nextSlide();
+}, 5000);
+
+// Jalankan saat halaman siap
+document.addEventListener("DOMContentLoaded", () => {
+  showSlide(currentSlide);
+});
