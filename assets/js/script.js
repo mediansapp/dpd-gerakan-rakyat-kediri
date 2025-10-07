@@ -30,3 +30,74 @@ function showAlert(message, type = "success") {
   document.body.appendChild(alertBox);
   setTimeout(() => alertBox.remove(), 4000);
 }
+/* =========================================================
+   GALERI SLIDER STYLE
+   ========================================================= */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.slide {
+  display: none;
+  animation: fadeSlide 1s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Tombol navigasi */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 122, 0, 0.8);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+.slider-btn:hover {
+  background-color: #e56a00;
+}
+.prev {
+  left: 15px;
+}
+.next {
+  right: 15px;
+}
+
+/* Indikator titik */
+.dots {
+  text-align: center;
+  margin-top: 15px;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+}
+.dot.active {
+  background-color: #ff7a00;
+}
+
