@@ -51,5 +51,29 @@
 <footer class="bg-dark text-light text-center py-3">
   © 2025 DPD Gerakan Rakyat Kota Kediri
 </footer>
+  <section class="container my-5 text-center">
+  <h2 class="text-warning mb-4 reveal">Data Organisasi</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-3 col-6 mb-4 reveal">
+      <div class="stats-box">
+        <span class="count-up" data-target="250">0</span>
+        <span class="stats-label">Anggota Aktif</span>
+      </div>
+    </div>
+    <div class="col-md-3 col-6 mb-4 reveal">
+      <div class="stats-box">
+        <span class="count-up" data-target="37">0</span>
+        <span class="stats-label">Program Berjalan</span>
+      </div>
+    </div>
+    <div class="col-md-3 col-6 mb-4 reveal">
+      <div class="stats-box">
+        <span class="count-up" data-target="12">0</span>
+        <span class="stats-label">Kegiatan Tahunan</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
