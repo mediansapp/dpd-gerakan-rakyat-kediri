@@ -100,6 +100,45 @@ function showAlert(message, type = "success") {
 .dot.active {
   background-color: #ff7a00;
 }
+// ===========================================================
+// COUNT-UP ANIMATION (Jumlah Anggota, Program, Kegiatan, dll.)
+// ===========================================================
+
+// Fungsi animasi angka naik
+function animateCountUp(element) {
+  const target = +element.getAttribute('data-target');
+  const speed = 200; // semakin besar, semakin lambat
+  const increment = target / speed;
+  let count = 0;
+
+  const updateCount = () => {
+    count += increment;
+    if (count < target) {
+      element.innerText = Math.floor(count);
+      requestAnimationFrame(updateCount);
+    } else {
+      element.innerText = target.toLocaleString();
+    }
+  };
+  updateCount();
+}
+
+// Jalankan animasi saat elemen terlihat di layar
+function triggerCountUp() {
+  const counters = document.querySelectorAll('.count-up');
+  const windowHeight = window.innerHeight;
+
+  counters.forEach(counter => {
+    const elementTop = counter.getBoundingClientRect().top;
+    if (elementTop < windowHeight - 100 && !counter.classList.contains('counted')) {
+      counter.classList.add('counted');
+      animateCountUp(counter);
+    }
+  });
+}
+
+window.addEventListener('scroll', triggerCountUp);
+window.addEventListener('load', triggerCountUp);
 
 // ===========================================================
 // GALERI SLIDER OTOMATIS DPD GERAKAN RAKYAT KOTA KEDIRI
