@@ -11,3 +11,28 @@ footer {
   background-color: #222;
   color: white;
 }
+/* =========================================================
+   COUNT-UP SECTION STYLE
+   ========================================================= */
+.stats-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  padding: 30px 20px;
+  transition: transform 0.3s ease;
+}
+.stats-box:hover {
+  transform: translateY(-5px);
+}
+
+.count-up {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ff7a00;
+  display: block;
+}
+
+.stats-label {
+  font-size: 1rem;
+  color: #555;
+}
