@@ -37,5 +37,24 @@
 <footer class="bg-dark text-light text-center py-3">
   © 2025 DPD Gerakan Rakyat Kota Kediri
 </footer>
+
+  <section class="container text-center my-5">
+  <h2 class="text-warning mb-4 reveal">Galeri Kegiatan</h2>
+
+  <div class="slider-container reveal">
+    <div class="slide active">
+      <img src="img/default.jpg" alt="Kegiatan 1">
+    </div>
+    <div class="slide">
+      <img src="img/default.jpg" alt="Kegiatan 2">
+    </div>
+    <div class="slide">
+      <img src="img/default.jpg" alt="Kegiatan 3">
+    </div>
+
+    <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+    <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+  </div>
+</section>
 </body>
 </html>
