@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+  <div class="container">
+    <a class="navbar-brand text-dark fw-bold" href="index.php">
+      <img src="img/logo.svg" alt="Logo" width="40" class="me-2">
+      DPD Gerakan Rakyat Kota Kediri
+    </a>
+  </div>
+</nav>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
   <div class="container">
     <a class="navbar-brand text-dark fw-bold" href="index.php">DPD Gerakan Rakyat Kota Kediri</a>
@@ -74,6 +83,7 @@
     </div>
   </div>
 </section>
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>
